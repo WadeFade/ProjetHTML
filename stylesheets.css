@@ -10,6 +10,10 @@ body{
     position: absolute;
     top: 0;
     left: 0;
+    color: white;
+    background-color: rgba(80,80,80,0.4);
+    border: none;
+    backdrop-filter: blur(10px);
 }
 #menu ul,#menu li{
     margin: 0;
@@ -42,40 +46,40 @@ body{
 }
 section{
     display: flex;
-    background-image: url("fondsection.jpg");
+    background-image: url("images/fondsection.jpg");
     background-position: center;
     max-width: 100%;
     height: 100vh;
 
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: center;
 }
 section h2{
     font-family: Kalam, cursive;
-    margin-top: 1%;
+    margin-top: 0;
     font-size: 2em;
 }
 section>article{
     display: flex;
-    justify-content: space-evenly;
+
     align-content: center;
     width:100%;
     margin:3%;
-    padding: 3%;
+    padding: 1%;
     background-color: rgba(255,255,255,0.2);
     backdrop-filter: blur(5px);
     color: navajowhite;
 }
 section>article>p{
     font-family: Cookie, cursive;
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 0;
     margin: 0;
 }
 section>article img{
     width:100%;
-    margin: 3%;
+    margin-right: 3%;
     background-color: rgba(255,255,255,0.4);
     color: navajowhite;
 }
@@ -85,7 +89,7 @@ section>article img{
     display: flex;
     align-items: center;
     text-align: center;
-    background: url("espace.jpg");
+    background: url("images/espace.jpg");
     margin: 0;
     padding: 0;
 }
@@ -107,7 +111,9 @@ section>article img{
 }
 #presentationG p{
     font-family: Cookie, cursive;
-    font-size: 1.5em;
+    font-size: 1.7em;
+    padding: 0 3%;
+    margin-top: 0;
 }
 #copyright{
     text-align: center;
@@ -115,42 +121,54 @@ section>article img{
     backdrop-filter: blur(10px);
 }
 
-@media(min-width: 768px){
-    #afficheMenu{
+@media(min-width: 768px) {
+    #afficheMenu {
         display: none;
     }
-    #menu{
+
+    #menu {
         display: block;
         margin: 0;
         z-index: 10;
         position: relative;
     }
-    #menu>ul{
+
+    #menu > ul {
         display: flex;
         justify-content: stretch;
         position: fixed;
         width: 100%;
     }
-    #menu>ul>li{
+
+    #menu > ul > li {
         flex-grow: 1;
     }
-    section{
+
+    section {
         display: flex;
     }
-    section>article{
+
+    section > article {
         display: flex;
-        padding: 3%;
-        width:30%;
-        /*justify-content: space-evenly;*/
+        padding: 2%;
+        width: 30%;
     }
-    section>article>img{
+
+    section > article > img {
+        margin-right: 3%;
+    }
+
+    section > h2 {
+        position: absolute;
+        margin-top: 2.7%;
+
+    }
+
+    section > article > p {
+        font-family: Cookie, cursive;
+        font-size: 1.3em;
+        padding: 0;
         margin: 0;
     }
-    section>h2{
-        position: absolute;
-        margin-top: 3%;
-
-    }
 }
-
 
