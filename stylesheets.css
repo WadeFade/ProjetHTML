@@ -1,0 +1,156 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Consolas, serif;
+}
+#afficheMenu{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#menu ul,#menu li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#menu ul{
+    background-color: rgba(80,80,80,0.4);
+    backdrop-filter: blur(10px);
+}
+#menu>ul>li>a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: all ease .3s;
+}
+#menu>ul>li>a:hover{
+    color: gray;
+}
+#menu{
+    display: none;
+}
+#menu.actif{
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin-top: 5%;
+}
+section{
+    display: flex;
+    background-image: url("fondsection.jpg");
+    background-position: center;
+    max-width: 100%;
+    height: 100vh;
+
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+section h2{
+    font-family: Kalam, cursive;
+    margin-top: 1%;
+    font-size: 2em;
+}
+section>article{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    width:100%;
+    margin:3%;
+    padding: 3%;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+    color: navajowhite;
+}
+section>article>p{
+    font-family: Cookie, cursive;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
+section>article img{
+    width:100%;
+    margin: 3%;
+    background-color: rgba(255,255,255,0.4);
+    color: navajowhite;
+}
+#backgroundTitle{
+    max-width: 100vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: url("espace.jpg");
+    margin: 0;
+    padding: 0;
+}
+#backgroundTitle h1{
+    color: white;
+    width: 100%;
+    font-size: 3em;
+}
+#presentationG{
+    border: 2px solid black;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#presentationG h2{
+    font-family: Kalam, cursive;
+    font-size: 2em;
+}
+#presentationG p{
+    font-family: Cookie, cursive;
+    font-size: 1.5em;
+}
+#copyright{
+    text-align: center;
+    background-color: rgba(80,80,80,0.4);
+    backdrop-filter: blur(10px);
+}
+
+@media(min-width: 768px){
+    #afficheMenu{
+        display: none;
+    }
+    #menu{
+        display: block;
+        margin: 0;
+        z-index: 10;
+        position: relative;
+    }
+    #menu>ul{
+        display: flex;
+        justify-content: stretch;
+        position: fixed;
+        width: 100%;
+    }
+    #menu>ul>li{
+        flex-grow: 1;
+    }
+    section{
+        display: flex;
+    }
+    section>article{
+        display: flex;
+        padding: 3%;
+        width:30%;
+        /*justify-content: space-evenly;*/
+    }
+    section>article>img{
+        margin: 0;
+    }
+    section>h2{
+        position: absolute;
+        margin-top: 3%;
+
+    }
+}
+
+

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Page d'accueil</title>
+    <meta name="description" content="Agence Web, venez découvrir nos projets ainsi que nos portfolios">
+    <link rel="icon" type="image/png" href="faviconweb.png"/>
+    <link rel="stylesheet" href="stylesheets.css">
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Kalam|Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/da7397688c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!--Bouton menu pour le responsive-->
+    <button id="afficheMenu"><i class="fas fa-bars"></i></button>
+<!--Barre de navigation-->
+<header>
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+            <li><a href="">L'équipe</a></li>
+            <!--            <li><a href="">Projets</a></li>-->
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a id="modeSombre" href=""><i class="fas fa-moon"></i></a></button></li>
+        </ul>
+    </nav>
+</header>
+
+<!--Image background + titre-->
+    <div id="backgroundTitle">
+        <h1>Bew 165</h1>
+    </div>
+<!--Présentation générale-->
+<div id="presentationG">
+    <h2>Présentation générale</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, totam?</p>
+</div>
+<!--Présentation individuelle-->
+
+<section>
+    <h2>Présentation individuelle</h2>
+    <article>
+        <img src="" alt="Photos">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, architecto asperiores assumenda dicta distinctio fugiat laudantium obcaecati rem sunt suscipit? Beatae eum id minus officia, repellendus soluta veniam voluptates voluptatum?</p>
+    </article>
+    <article>
+        <img src="" alt="Photos">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, magni, suscipit. A aliquam amet asperiores beatae corporis, delectus ipsum iusto mollitia officia optio pariatur perferendis, perspiciatis, provident repellat soluta tempora.</p>
+    </article>
+    <article>
+        <img src="" alt="Photos">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aliquid aut blanditiis dolorum earum esse expedita facilis illum, ipsam ipsum laborum odit, officia pariatur, quaerat quo sed tempore velit?</p>
+    </article>
+    <article>
+        <img src="" alt="Photos">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur laboriosam sed voluptas. Animi consectetur culpa dolore error ex explicabo illo magnam mollitia nostrum, odio perspiciatis, quam sed temporibus vel voluptate.</p>
+    </article>
+</section>
+
+<!--Pied de la page-->
+
+<footer>
+    <div id="copyright">Ce site est le site projet de Andy C. & Mathis G.</div>
+</footer>
+
+    <script>
+        function activerDesactiver(){
+            document.querySelector("#menu").classList.toggle("actif");
+        }
+        document.querySelector("#afficheMenu").addEventListener("click", activerDesactiver);
+    </script>
+
+</body>
+</html>
