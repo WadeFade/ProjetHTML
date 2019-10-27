@@ -44,34 +44,31 @@ body{
     width: 100%;
     margin-top: 5%;
 }
+/*Background à changer quand on aura l'image*/
 section{
     display: flex;
-    background-image: url("images/fondsection.jpg");
-    background-position: center;
-    max-width: 100%;
-    flex-flow: row wrap;
-
+    background: crimson;
+    max-width: 100vw;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
-    align-items: center;
 }
 section h2{
     font-family: Kalam, cursive;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
     font-size: 2em;
     text-align: center;
-
 }
 section>article{
     display: flex;
     margin:3%;
     padding: 1%;
-
     background-color: rgba(255,255,255,0.2);
     backdrop-filter: blur(5px);
     color: navajowhite;
-
+    min-width: 80vw;
+}
+section>#article1{
+    margin: 0 3% 3% 3%;
 }
 section>article>p{
     font-family: Cookie, cursive;
@@ -85,6 +82,7 @@ section>article img{
     background-color: rgba(255,255,255,0.4);
     color: navajowhite;
 }
+/*Background à changer quand on aura une vraie image*/
 #backgroundTitle{
     max-width: 100vw;
     height: 40vh;
@@ -127,51 +125,61 @@ section>article img{
     #afficheMenu {
         display: none;
     }
-
     #menu {
         display: block;
         margin: 0;
         z-index: 10;
         position: relative;
     }
-
     #menu>ul {
         display: flex;
         justify-content: stretch;
         position: fixed;
         width: 100%;
     }
-
     #menu>ul>li {
         flex-grow: 1;
     }
-
     section {
         display: flex;
-        flex-flow: row wrap;
-
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
     }
-
     section>article {
         display: flex;
         margin: 2%;
+        min-width: 0vw;
+        width: 40vw;
     }
-
+    section>#article1{
+        margin: 8% 4% 2% 2%;
+    }
+    section>#article2{
+        margin: 8% 4% 2% 2%;
+    }
+    /*A modif quand il y aura les photos*/
     section>article>img {
 
     }
-
-    section > h2 {
-
-
-
+    section>header>h2 {
+        position: absolute;
+        left: 0;
+        margin: 0 25%;
+        padding-top: 1%;
+        width: 50vw;
     }
-
     section > article > p {
         font-family: Cookie, cursive;
         font-size: 1.4em;
         padding: 0;
         margin: 0;
     }
+}
+/*A retoucher si nécessaire*/
+@media(min-width: 1024px) {
+
 }
 
