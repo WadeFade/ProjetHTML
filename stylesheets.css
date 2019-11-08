@@ -8,12 +8,13 @@ body{
 }
 #afficheMenu{
     position: absolute;
-    top: 0;
-    left: 0;
-    color: white;
-    background-color: rgba(80,80,80,0.4);
+    top: 3%;
+    right: 5%;
+    color: #318ce7;
+    background-color: rgba(80,80,80,0);
     border: none;
     backdrop-filter: blur(10px);
+    z-index: 1;
 }
 #menu ul,#menu li{
     margin: 0;
@@ -23,10 +24,12 @@ body{
 #menu ul{
     background-color: rgba(80,80,80,0.4);
     backdrop-filter: blur(10px);
+    align-items: center;
+    justify-content: stretch;
 }
 #menu ul li a{
     display: block;
-    padding: 15px;
+    padding: 15px 0;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -40,14 +43,15 @@ body{
 }
 #menu.actif{
     display: block;
-    position: absolute;
     width: 100%;
-    margin-top: 5%;
+    position: absolute;
+}
+.CacherTel.actif{
+    display: none;
 }
 header nav ul li a img{
     width: 10%;
 }
-/*Background à changer quand on aura l'image*/
 section{
     display: flex;
     background: crimson;
@@ -87,14 +91,7 @@ section article img{
 }
 /*Background à changer quand on aura une vraie image*/
 #backgroundTitle{
-    max-width: 100vw;
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background: url("images/espace.jpg");
-    margin: 0;
-    padding: 0;
+
 }
 #backgroundTitle h1{
     color: white;

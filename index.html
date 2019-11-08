@@ -22,12 +22,12 @@
 <header>
     <nav id="menu">
         <ul>
-            <li><a href="#backgroundTitle"><img src="images/LogoBew.svg" alt="Logo BEW 165"></a></li>
+            <li class="CacherTel"><a href="#backgroundTitle"><img src="images/LogoBew.svg" alt="Logo BEW 165"></a></li>
             <li><a href="#Equipe">L'équipe</a></li>
             <li><a href="#">Projets</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a id="modeSombre" href=""><i class="fas fa-moon"></i></a></li>
+            <li class="CacherTel"><a id="modeSombre" href=""><i class="fas fa-moon"></i></a></li>
         </ul>
     </nav>
 </header>
@@ -85,9 +85,9 @@
 <script>
         function activerDesactiver(){
             document.querySelector("#menu").classList.toggle("actif");
+            document.querySelector(".CacherTel").classList.toggle("cacher");
         }
         document.querySelector("#afficheMenu").addEventListener("click", activerDesactiver);
-
         /* ♦ smoooooooooothitude ♦ */
         $(function() {
             $("a[href*='#']:not([href='#'])").click(function() {
