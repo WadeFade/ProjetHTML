@@ -24,7 +24,7 @@ body{
     background-color: rgba(80,80,80,0.4);
     backdrop-filter: blur(10px);
 }
-#menu>ul>li>a {
+#menu ul li a{
     display: block;
     padding: 15px;
     color: white;
@@ -32,7 +32,7 @@ body{
     text-align: center;
     transition: all ease .3s;
 }
-#menu>ul>li>a:hover{
+#menu ul li a:hover{
     color: gray;
 }
 #menu{
@@ -43,6 +43,9 @@ body{
     position: absolute;
     width: 100%;
     margin-top: 5%;
+}
+header nav ul li a img{
+    width: 10%;
 }
 /*Background à changer quand on aura l'image*/
 section{
@@ -58,7 +61,7 @@ section h2{
     font-size: 2em;
     text-align: center;
 }
-section>article{
+section article{
     display: flex;
     margin:3%;
     padding: 1%;
@@ -67,16 +70,16 @@ section>article{
     color: navajowhite;
     min-width: 80vw;
 }
-section>#article1{
+section #article1{
     margin: 0 3% 3% 3%;
 }
-section>article>p{
+section article p{
     font-family: Cookie, cursive;
     font-size: 1.3em;
     padding: 0;
     margin: 0;
 }
-section>article img{
+section article img{
     width:100%;
     margin-right: 3%;
     background-color: rgba(255,255,255,0.4);
@@ -121,26 +124,26 @@ section>article img{
     backdrop-filter: blur(10px);
 }
 
-@media(min-width: 768px) {
-    #afficheMenu {
+@media(min-width: 768px){
+    #afficheMenu{
         display: none;
     }
-    #menu {
+    #menu{
         display: block;
         margin: 0;
         z-index: 10;
         position: relative;
     }
-    #menu>ul {
+    #menu ul{
         display: flex;
         justify-content: stretch;
         position: fixed;
         width: 100%;
     }
-    #menu>ul>li {
+    #menu ul li{
         flex-grow: 1;
     }
-    section {
+    section{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -148,30 +151,30 @@ section>article img{
         margin: 0;
         padding: 0;
     }
-    section>article {
+    section article{
         display: flex;
         margin: 2%;
-        min-width: 0vw;
+        min-width: 0;
         width: 40vw;
     }
-    section>#article1{
+    #article1{
         margin: 8% 4% 2% 2%;
     }
-    section>#article2{
+    #article2{
         margin: 8% 4% 2% 2%;
     }
     /*A modif quand il y aura les photos*/
-    section>article>img {
+    section article img{
 
     }
-    section>header>h2 {
+    section header h2{
         position: absolute;
         left: 0;
         margin: 0 25%;
         padding-top: 1%;
         width: 50vw;
     }
-    section > article > p {
+    section article p{
         font-family: Cookie, cursive;
         font-size: 1.4em;
         padding: 0;
@@ -179,7 +182,7 @@ section>article img{
     }
 }
 /*A retoucher si nécessaire*/
-@media(min-width: 1024px) {
+@media(min-width: 1024px){
 
 }
 
