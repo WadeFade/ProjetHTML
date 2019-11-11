@@ -52,6 +52,26 @@ body{
 header nav ul li a img{
     width: 10%;
 }
+#backgroundTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+#backgroundTitle img {
+    max-width: 100vw;
+    max-height: 101vh;
+}
+h1 {
+    font-size: 1em;
+    text-align: center;
+}
+h2 {
+    font-size: 0.8em;
+}
+
+
+/* rien toucher a partir de la */
 section{
     display: flex;
     background: crimson;
@@ -90,9 +110,6 @@ section article img{
     color: navajowhite;
 }
 /*Background à changer quand on aura une vraie image*/
-#backgroundTitle{
-
-}
 #backgroundTitle h1{
     color: white;
     width: 100%;
@@ -161,7 +178,7 @@ section article img{
         margin: 8% 4% 2% 2%;
     }
     /*A modif quand il y aura les photos*/
-    section article img{
+section article img{
 
     }
     section header h2{
@@ -178,6 +195,7 @@ section article img{
         margin: 0;
     }
 }
+
 /*A retoucher si nécessaire*/
 @media(min-width: 1024px){
 
