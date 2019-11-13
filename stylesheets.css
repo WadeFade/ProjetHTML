@@ -1,33 +1,39 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     font-family: Consolas, serif;
+    background-color: #232741;
 }
-#afficheMenu{
+
+#afficheMenu {
     position: absolute;
     top: 3%;
     right: 5%;
     color: #318ce7;
-    background-color: rgba(80,80,80,0);
+    background-color: rgba(80, 80, 80, 0);
     border: none;
     backdrop-filter: blur(10px);
     z-index: 1;
 }
-#menu ul,#menu li{
+
+#menu ul, #menu li {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
-#menu ul{
-    background-color: rgba(80,80,80,0.4);
+
+#menu ul {
+    background-color: rgba(80, 80, 80, 0.4);
     backdrop-filter: blur(10px);
     align-items: center;
     justify-content: stretch;
 }
-#menu ul li a{
+
+#menu ul li a {
     display: block;
     padding: 15px 0;
     color: white;
@@ -35,129 +41,164 @@ body{
     text-align: center;
     transition: all ease .3s;
 }
-#menu ul li a:hover{
+
+#menu ul li a:hover {
     color: gray;
 }
-#menu{
+
+#menu {
     display: none;
 }
-#menu.actif{
+
+#menu.actif {
     display: block;
     width: 100%;
     position: absolute;
 }
-.CacherTel.actif{
+
+.CacherTel.actif {
     display: none;
 }
-header nav ul li a img{
+
+header nav ul li a img {
     width: 10%;
 }
-#backgroundTitle{
+
+#backgroundTitle {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: black;
 }
+
 #backgroundTitle img {
     max-width: 100vw;
     max-height: 101vh;
 }
+
 h1 {
     font-size: 1em;
     text-align: center;
 }
+
 h2 {
     font-size: 0.8em;
 }
 
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #232741;
+    background-image: url("images/LogoBew.svg");
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 50% 50%;
+}
 
 /* rien toucher a partir de la */
-section{
+section {
     display: flex;
     background: crimson;
     max-width: 100vw;
     flex-direction: column;
     justify-content: center;
 }
-section h2{
+
+section h2 {
     font-family: Kalam, cursive;
     margin: 0;
     font-size: 2em;
     text-align: center;
 }
-section article{
+
+section article {
     display: flex;
-    margin:3%;
+    margin: 3%;
     padding: 1%;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
     color: navajowhite;
     min-width: 80vw;
 }
-section #article1{
+
+section #article1 {
     margin: 0 3% 3% 3%;
 }
-section article p{
+
+section article p {
     font-family: Cookie, cursive;
     font-size: 1.3em;
     padding: 0;
     margin: 0;
 }
-section article img{
-    width:100%;
+
+section article img {
+    width: 100%;
     margin-right: 3%;
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(255, 255, 255, 0.4);
     color: navajowhite;
 }
+
 /*Background à changer quand on aura une vraie image*/
-#backgroundTitle h1{
+
+#backgroundTitle h1 {
     color: white;
     width: 100%;
     font-size: 3em;
 }
-#presentationG{
+
+#presentationG {
     border: 2px solid black;
     margin: 3%;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-#presentationG h2{
+
+#presentationG h2 {
     font-family: Kalam, cursive;
     font-size: 2em;
 }
-#presentationG p{
+
+#presentationG p {
     font-family: Cookie, cursive;
     font-size: 1.7em;
     padding: 0 3%;
     margin-top: 0;
 }
-#copyright{
+
+#copyright {
     text-align: center;
-    background-color: rgba(80,80,80,0.4);
+    background-color: rgba(80, 80, 80, 0.4);
     backdrop-filter: blur(10px);
 }
 
-@media(min-width: 768px){
-    #afficheMenu{
+@media (min-width: 768px) {
+    #afficheMenu {
         display: none;
     }
-    #menu{
+
+    #menu {
         display: block;
         margin: 0;
         z-index: 10;
         position: relative;
     }
-    #menu ul{
+
+    #menu ul {
         display: flex;
         justify-content: stretch;
         position: fixed;
         width: 100%;
     }
-    #menu ul li{
+
+    #menu ul li {
         flex-grow: 1;
     }
-    section{
+
+    section {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -165,30 +206,37 @@ section article img{
         margin: 0;
         padding: 0;
     }
-    section article{
+
+    section article {
         display: flex;
         margin: 2%;
         min-width: 0;
         width: 40vw;
     }
-    #article1{
+
+    #article1 {
         margin: 8% 4% 2% 2%;
     }
-    #article2{
+
+    #article2 {
         margin: 8% 4% 2% 2%;
     }
+
     /*A modif quand il y aura les photos*/
-section article img{
+
+    section article img {
 
     }
-    section header h2{
+
+    section header h2 {
         position: absolute;
         left: 0;
         margin: 0 25%;
         padding-top: 1%;
         width: 50vw;
     }
-    section article p{
+
+    section article p {
         font-family: Cookie, cursive;
         font-size: 1.4em;
         padding: 0;
@@ -197,7 +245,7 @@ section article img{
 }
 
 /*A retoucher si nécessaire*/
-@media(min-width: 1024px){
+@media (min-width: 1024px) {
 
 }
 
