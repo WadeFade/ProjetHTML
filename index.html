@@ -18,7 +18,7 @@
 
 <body>
 <!--Bouton menu pour la version smartphone-->
-    <button id="afficheMenu"><i class="fas fa-bars"></i></button>
+<button id="afficheMenu"><i class="fas fa-bars"></i></button>
 <!--Barre de navigation-->
 <header>
     <nav id="menu">
@@ -34,7 +34,7 @@
 </header>
 
 <!--Image background + titre-->
-<div id="backgroundTitle"><img src="images/Background_logo_phone.png" alt="Logo de BEW 165 sur fond noir"></div>
+<div id="particles-js"></div>
 <!--Présentation générale-->
 <h1>BEW 165</h1>
 <section id="presentationG">
@@ -46,69 +46,109 @@
 
 <!--Présentation individuelle-->
 <section id="Equipe">
-  <header>Présentation individuelle</header>
-
-        <article id="article1">
-         <img src="" alt="Photos">
-            <aside>
+    <header>Présentation individuelle</header>
+    <article id="article1">
+        <img src="" alt="Photos">
+        <aside>
             <p>1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores doloribus earum esse in laudantium molestias,
                 praesentium quisquam reprehenderit sapiente veniam veritatis. Accusantium amet asperiores, debitis dolor dolores eius enim
                 harum impedit minus nulla quisquam recusandae, sapiente ullam velit voluptas. Ab aspernatur, dignissimos ducimus ea id iste
                 nam quisquam ratione sit ullam! Consequatur error incidunt magni quo unde vero voluptates!</p>
-            </aside>
-        </article>
-        <article id="article2">
-            <img src="" alt="Photos">
-            <aside>
+        </aside>
+    </article>
+    <article id="article2">
+        <img src="" alt="Photos">
+        <aside>
             <p>2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut doloremque ipsa obcaecati omnis provident, quam sapiente voluptates!
                 Accusamus cupiditate, dolorem dolores facilis id iure laudantium magnam maiores minus molestiae natus quidem repudiandae sed sint
                 tenetur veritatis voluptatum. Aliquam autem cupiditate delectus dolore dolorem ea eligendi eveniet facere fugit inventore iure,
                 modi optio, pariatur, quaerat quas repellat rerum sapiente sunt tenetur.</p>
-            </aside>
-        </article>
-        <article>
-            <img src="" alt="Photos">
-            <aside>
+        </aside>
+    </article>
+    <article>
+        <img src="" alt="Photos">
+        <aside>
             <p>3Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cum cupiditate debitis ducimus eum excepturi expedita facilis fugit hic
                 libero necessitatibus obcaecati officia placeat porro possimus recusandae sint temporibus tenetur, ullam vero voluptas voluptatem
                 voluptatum. Accusantium adipisci delectus ea eaque earum excepturi exercitationem, fugiat hic id iure mollitia obcaecati placeat,
                 provident quisquam quod rerum sit sunt velit veritatis voluptate voluptatum.</p>
-            </aside>
-        </article>
-        <article>
-            <img src="" alt="Photos">
-            <aside>
+        </aside>
+    </article>
+    <article>
+        <img src="" alt="Photos">
+        <aside>
             <p>4Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus facere fugiat labore odio praesentium quaerat quam quasi quia
                 repudiandae vitae. Architecto atque, culpa delectus eaque esse fugit illum impedit ipsam ipsum iste, maxime necessitatibus numquam
                 possimus quibusdam recusandae reiciendis sunt tempore tenetur ullam velit. Accusamus aliquam atque culpa earum eius, error eum illo,
                 maiores minima, necessitatibus quae quisquam quo saepe.</p>
-            </aside>
-        </article>
+        </aside>
+    </article>
 </section>
-
 <!--Pied de la page-->
 <footer>
     <div id="copyright">Ce site est le site projet de Andy C. & Mathis G. BEW 165&copy;</div>
 </footer>
 
 <script>
-        function activerDesactiver(){
-            document.querySelector("#menu").classList.toggle("actif");
-            document.querySelector(".CacherTel").classList.toggle("cacher");
+    function activerDesactiver(){
+        document.querySelector("#menu").classList.toggle("actif");
+        document.querySelector(".CacherTel").classList.toggle("cacher");
+    }
+    document.querySelector("#afficheMenu").addEventListener("click", activerDesactiver);
+
+    particlesJS("particles-js", {
+        "particles": {
+            "number": {"value": 160, "density": {"enable": true, "value_area": 800}},
+            "color": {"value": "#ffffff"},
+            "shape": {
+                "type": "circle",
+                "stroke": {"width": 0, "color": "#000000"},
+                "polygon": {"nb_sides": 5},
+                "image": {"src": "img/github.svg", "width": 100, "height": 100}
+            },
+            "opacity": {"value": 1, "random": true, "anim": {"enable": true, "speed": 1, "opacity_min": 0, "sync": false}},
+            "size": {"value": 3, "random": true, "anim": {"enable": false, "speed": 4, "size_min": 0.3, "sync": false}},
+            "line_linked": {"enable": false, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1},
+            "move": {
+                "enable": true,
+                "speed": 1,
+                "direction": "none",
+                "random": true,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {"enable": false, "rotateX": 600, "rotateY": 600}
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {"enable": true, "mode": "bubble"},
+                "onclick": {"enable": true, "mode": "repulse"},
+                "resize": true
+            },
+            "modes": {
+                "grab": {"distance": 400, "line_linked": {"opacity": 1}},
+                "bubble": {"distance": 250, "size": 0, "duration": 2, "opacity": 0, "speed": 3},
+                "repulse": {"distance": 400, "duration": 0.4},
+                "push": {"particles_nb": 4},
+                "remove": {"particles_nb": 2}
+            }
+        },
+        "retina_detect": true
+    });
+    var update;
+    document.body.appendChild(stats.domElement);
+    update = function () {
+        stats.begin();
+        stats.end();
+        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+            count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
         }
-        document.querySelector("#afficheMenu").addEventListener("click", activerDesactiver);
-        /* ♦ smoooooooooothitude ♦ */
-        $(function() {
-            $("a[href*='#']:not([href='#'])").click(function() {
-                // if (location.hostname == this.hostname && this.pathname.replace(/^\//,"") == location.pathname.replace(/^\//,"")) {
-                var ancre = $(this.hash);
-                ancre = ancre.length ? ancre : $("[name=" + this.hash.slice(1) +"]");
-                if ( ancre.length ) {
-                    $("html, body").animate( { scrollTop: ancre.offset().top }, 1500);
-                }
-                // }
-            });
-        });
+        requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+    ;
 </script>
 </body>
 </html>
