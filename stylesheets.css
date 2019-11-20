@@ -79,7 +79,7 @@ h1 {
 
 #Equipe {
     display: flex;
-    background: crimson;
+    background: black;
     max-width: 100vw;
     flex-direction: column;
     justify-content: center;
@@ -89,6 +89,7 @@ h1 {
     font-family: Kalam, cursive;
     margin: 0;
     font-size: 2em;
+    color: white;
     text-align: center;
 }
 
@@ -147,6 +148,9 @@ h1 {
     text-align: center;
     background-color: rgba(80, 80, 80, 0.4);
     backdrop-filter: blur(10px);
+}
+#section1{
+    z-index: 1;
 }
 
 @media (min-width: 768px) {
@@ -210,7 +214,7 @@ h1 {
      }
 
     #Equipe header {
-        margin: 2% 25% 0% 25%;
+        margin: 2% 25% 0 25%;
         width: 50vw;
     }
 

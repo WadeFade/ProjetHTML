@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Comment nous contacter ?</title>
+    <meta name="description" content="Contacter Bew 165 | Agence Web et de services informatiques">
+    <link rel="icon" type="image/png" href="data/image%20PS/favicoBew.png"/>
+    <link rel="stylesheet" href="stylesheets.css">
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Kalam|Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/da7397688c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--Bouton menu pour la version smartphone-->
+<button id="afficheMenu"><i class="fas fa-bars"></i></button>
+<!--Barre de navigation-->
+<header>
+    <nav id="menu">
+        <ul id="navig">
+            <li><a href="index.html"><img src="images/LogoBew.svg" alt="Logo BEW 165"></a></li>
+            <li><a href="equipe.html">L'équipe</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="CacherTel"><a id="modeSombre" href=""><i class="fas fa-moon"></i></a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="section1">
+    <header>formulaire de contact ici</header>
+    <article>tous les champs prévus aux contact</article>
+    <article>num tel</article>
+    <article>adresse email</article>
+    <article>adresse </article>
+    <article>etc etc etc</article>
+</section>
+<footer>
+    <div id="copyright">Ce site est le site projet de Andy C. & Mathis G. BEW 165&copy;</div>
+</footer>
+<script>
+    function activerDesactiver(){
+        document.querySelector("#menu").classList.toggle("actif");
+    }
+    document.querySelector("#afficheMenu").addEventListener("click", activerDesactiver);
+
+    function changementtaillefenetre(){
+        if (document.body.clientWidth>=768){
+            var navbarheight = document.getElementById("navig").offsetHeight;
+            var sectionmod = document.getElementById("section1");
+            sectionmod.style.paddingTop=navbarheight+"px";
+        }
+    }
+    window.onresize = changementtaillefenetre;
+    window.onload = function(){changementtaillefenetre()};
+</script>
+</body>
+</html>

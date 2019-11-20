@@ -13,7 +13,6 @@
     <script src="https://kit.fontawesome.com/474f36629d.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script type="text/javascript" src="backgroundjs.js"></script>
 </head>
 
 <body>
@@ -23,11 +22,11 @@
 <header>
     <nav id="menu">
         <ul>
-            <li><a href="#backgroundTitle"><img src="images/LogoBew.svg" alt="Logo BEW 165"></a></li>
-            <li><a href="#Equipe">L'équipe</a></li>
-            <li><a href="#">Projets</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#particles-js"><img src="images/LogoBew.svg" alt="Logo BEW 165"></a></li>
+            <li><a href="equipe.html">L'équipe</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li class="CacherTel"><a id="modeSombre" href=""><i class="fas fa-moon"></i></a></li>
         </ul>
     </nav>
@@ -94,7 +93,6 @@
         document.querySelector("#menu").classList.toggle("actif");
     }
     document.querySelector("#afficheMenu").addEventListener("click", activerDesactiver);
-
     particlesJS("particles-js", {
         "particles": {
             "number": {"value": 160, "density": {"enable": true, "value_area": 800}},
@@ -136,18 +134,6 @@
         },
         "retina_detect": true
     });
-    var update;
-    document.body.appendChild(stats.domElement);
-    update = function () {
-        stats.begin();
-        stats.end();
-        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-            count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-        }
-        requestAnimationFrame(update);
-    };
-    requestAnimationFrame(update);
-    ;
 </script>
 </body>
 </html>
