@@ -123,7 +123,6 @@ h1 {
 
 /*Background à changer quand on aura de vraies images*/
 
-
 #presentationG {
     border: 2px solid black;
     margin: 3%;
@@ -152,6 +151,40 @@ h1 {
 #section1{
     padding-top: 52px;
     z-index: 1;
+}
+/*Pour le carrousel A MODIF CAR CA REND FOUUUU ne pas oublier de garder les proportions par rapport au nombre d'images utilisées*/
+#slider figure {
+    position: relative;
+    width: 300%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+    animation: 22s slidy infinite;
+}
+#slider figure img {
+    width: 33.33%;
+    height: auto;
+    float: left;
+}
+#slider {
+    width: 50%;
+    text-align: center;
+    max-width: 1000px;
+    overflow: hidden;
+}
+#middle {
+    display: flex;
+    justify-content: center;
+}
+@keyframes slidy {
+    0% {left: 0%;}
+    28.33% {left: 0%;}
+    33.33% {left: -100%;}
+    61.66% {left: -100%;}
+    66.66% {left: -200%;}
+    94.99% {left: -200%;}
+    100% {left: 0%;}
 }
 
 @media (min-width: 768px) {
@@ -228,4 +261,3 @@ h1 {
 }
 
 /*Media query pour le 1024 pixel on verra si on en à besoin mais je ne penses pas*/
-
