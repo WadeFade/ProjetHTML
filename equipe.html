@@ -116,11 +116,12 @@
         document.querySelector("#menu").classList.toggle("actif");
     }
     document.querySelector("#afficheMenu").addEventListener("click", activerDesactiver);
-
+let navbargeight;
+let sectionmod;
         function changementtaillefenetre(){
             if (document.body.clientWidth>=768){
-                var navbarheight = document.getElementById("navig").offsetHeight;
-                var sectionmod = document.getElementById("section1");
+                navbarheight = document.getElementById("navig").offsetHeight;
+                sectionmod = document.getElementById("section1");
                 sectionmod.style.paddingTop=navbarheight+"px";
             }
         }

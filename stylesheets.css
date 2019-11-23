@@ -195,13 +195,13 @@ h1 {
     align-items: center;
 }
 @keyframes slidy {
-    0% {left: 0%;}
-    28.33% {left: 0%;}
+    0% {left: 0;}
+    28.33% {left: 0;}
     33.33% {left: -100%;}
     61.66% {left: -100%;}
     66.66% {left: -200%;}
     94.99% {left: -200%;}
-    100% {left: 0%;}
+    100% {left: 0;}
 }
 /*Media query format 768px en largeur*/
 @media (min-width: 768px) {
