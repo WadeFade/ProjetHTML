@@ -29,16 +29,43 @@
     </nav>
 </header>
 
-<section id="section1">
-    <header>formulaire de contact ici</header>
-    <article>tous les champs prévus aux contact</article>
-    <article>num tel</article>
-    <article>adresse email</article>
-    <article>adresse </article>
-    <article>etc etc etc</article>
-</section>
+<h1>Contactez nous !</h1>
+<div id="formulaire">
+    <form action="#" method="post">
+         <ul>
+            <li id="formGenre" class="formulaire">
+                <select name="genre" id="genre" required>
+                    <option value selected="selected">Sélectionnez</option>
+                    <option value="Madame">Madame</option>
+                    <option value="Monsieur">Monsieur</option>
+                </select>
+            </li>
+            <li id="formNom" class="formulaire">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom"  placeholder="Votre nom" minlength="2" maxlength="20" required>
+            </li>
+            <li id="formPrenom" class="formulaire">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" minlength="2" maxlength="20" required>
+            </li>
+            <li id="formPostal" class="formulaire">
+                <label for="codepostal">Code Postal</label>
+                <input type="number" id="codepostal" name="codepostal" placeholder="Votre code postal" minlength="5" maxlength="5" required>
+            </li>
+            <li id="formEmail" class="formulaire">
+                <label for="email">E-Mail</label>
+                <input type="email"  id="email" name="email" placeholder="Votre email" maxlength="50" required>
+            </li>
+            <li id="formTel" class="formulaire">
+                <label for="tel">Numéro de téléphone</label>
+                <input type="tel" id="tel" name="tel" placeholder="Votre numéro de téléphone" minlength="10" required>
+            </li>
+         </ul>
+    </form>
+</div>
+
 <footer>
-    <div id="copyright">Ce site est le site projet de Andy C. & Mathis G. BEW 165&copy;</div>
+    <div id="copyright">&copy; 2019 BEW 165 | Développé par Andy C. & Mathis G.</div>
 </footer>
 <script>
     function activerDesactiver(){
