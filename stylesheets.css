@@ -7,6 +7,9 @@ body {
     padding: 0;
     font-family: Consolas, serif;
 }
+#BodyProjets{
+    background-color: black;
+}
 
 #afficheMenu {
     position: absolute;
@@ -144,10 +147,25 @@ h1 {
     padding: 0 3%;
     margin-top: 0;
 }
-/*Section1 , premier bloc sous nav bar*/
-#section1{
+/*h1_1 , premier bloc sous nav bar*/
+#h1_1{
     padding-top: 52px;
     z-index: 1;
+    text-align: center;
+    font-size: 1em;
+    display: inline-block;
+    width:100%;
+}
+#titreProjets{
+    padding-top: 52px;
+    z-index: 1;
+    text-align: center;
+    font-size: 1.5em;
+    display: inline-block;
+    width:100%;
+    background-color: black;
+    color: white;
+    margin: 0;
 }
 #section1projets{
     background-color: black;
@@ -183,7 +201,7 @@ h1 {
     float: left;
 }
 #slider {
-    width: 95%;
+    width: 50%;
     text-align: center;
     overflow: hidden;
     border: solid black 2px;

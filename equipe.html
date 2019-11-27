@@ -29,7 +29,7 @@
     </nav>
 </header>
 
-<section id="section1"> présentation individuelle de l'équipe + liens portefolio perso </section>
+<h1 id="h1_1"> présentation individuelle de l'équipe + liens portefolio perso </h1>
 <!--Présentation individuelle-->
 <section id="Equipe">
     <header>Présentation de la team</header>
@@ -116,12 +116,12 @@
         document.querySelector("#menu").classList.toggle("actif");
     }
     document.querySelector("#afficheMenu").addEventListener("click", activerDesactiver);
-let navbargeight;
-let sectionmod;
+// let navbargeight;
+// let sectionmod;
         function changementtaillefenetre(){
             if (document.body.clientWidth>=768){
                 navbarheight = document.getElementById("navig").offsetHeight;
-                sectionmod = document.getElementById("section1");
+                sectionmod = document.getElementById("h1_1");
                 sectionmod.style.paddingTop=navbarheight+"px";
             }
         }

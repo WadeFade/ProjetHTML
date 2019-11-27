@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cookie|Kalam|Permanent+Marker&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/da7397688c.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="BodyProjets">
 <!--Bouton menu pour la version smartphone-->
 <button id="afficheMenu"><i class="fas fa-bars"></i></button>
 <!--Barre de navigation-->
@@ -42,8 +42,8 @@
 <!--    <article>projet web - projet secret perso Andy - arrive soon</article>-->
 <!--</section>-->
 <!--//carrousel qui sera modif pour notre site finale (pour le moment image aléatoire re-taillé-->
+<h1 id="titreProjets">Nos différents projets</h1>
 <section id="section1projets">
-    <h1> Nos différents projets : </h1>
     <div id="middle">
         <div id="slider">
             <figure>
@@ -64,13 +64,12 @@
     function changementtaillefenetre(){
         if (document.body.clientWidth>=768){
             var navbarheight = document.getElementById("navig").offsetHeight;
-            var sectionmod = document.getElementById("section1");
-            sectionmod.style.paddingTop=navbarheight+"px";
+            var sectionmod = document.getElementById("titreProjets");
+            sectionmod.style.paddingTop=navbarheight+0.5*navbarheight+"px";
         }
     }
     window.onresize = changementtaillefenetre;
     window.onload = function(){changementtaillefenetre()};
-
 </script>
 </body>
 </html>

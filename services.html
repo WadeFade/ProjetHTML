@@ -29,12 +29,11 @@
     </nav>
 </header>
 
-<section id="section1">
-    <header>tous nos services ici</header>
+<h1 id="h1_1">Tous nos services ici</h1>
+<section>
     <article>Dev web</article>
     <article>Reparation info</article>
     <article>Autres services (aide/cours/informatique)</article>
-
 </section>
 
 <footer>
@@ -49,7 +48,7 @@
     function changementtaillefenetre(){
         if (document.body.clientWidth>=768){
             var navbarheight = document.getElementById("navig").offsetHeight;
-            var sectionmod = document.getElementById("section1");
+            var sectionmod = document.getElementById("h1_1");
             sectionmod.style.paddingTop=navbarheight+"px";
         }
     }
