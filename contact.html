@@ -30,58 +30,65 @@
 </header>
 
 <h1 id="h1_1">Contactez Bew 165</h1>
-<div id="formulaire">
-    <form action="#" method="post">
-         <ul>
-            <li id="formGenre" class="formulaire">
-                <select name="genre" id="genre" required>
-                    <option value selected="selected">Sélectionnez</option>
-                    <option value="Madame">Madame</option>
-                    <option value="Monsieur">Monsieur</option>
-                </select>
-            </li>
-            <li id="formNom" class="formulaire">
-                <label for="nom">Nom</label>
-                <input type="text" id="nom" name="nom"  placeholder="Votre nom" minlength="2" maxlength="20" required>
-            </li>
-            <li id="formPrenom" class="formulaire">
-                <label for="prenom">Prénom</label>
-                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" minlength="2" maxlength="20" required>
-            </li>
-            <li id="formPostal" class="formulaire">
-                <label for="codepostal">Code Postal</label>
-                <input type="number" id="codepostal" name="codepostal" placeholder="Votre code postal" minlength="5" maxlength="5" required>
-            </li>
-            <li id="formEmail" class="formulaire">
-                <label for="email">E-Mail</label>
-                <input type="email"  id="email" name="email" placeholder="Votre email" maxlength="50" required>
-            </li>
-            <li id="formTel" class="formulaire">
-                <label for="tel">Numéro de téléphone</label>
-                <input type="tel" id="tel" name="tel" placeholder="Votre numéro de téléphone" minlength="10" required>
-            </li>
-         </ul>
-    </form>
-</div>
+<form action="#" method="post">
+    <ul class="formulaire">
+        <li id="formGenre" class="form">
+            <select name="genre" id="genre" required>
+                <option value selected="selected">Sélectionnez</option>
+                <option value="Madame">Madame</option>
+                <option value="Monsieur">Monsieur</option>
+            </select>
+        </li>
+        <li id="formNom" class="form">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" minlength="2" maxlength="20" required>
+        </li>
+        <li id="formPrenom" class="form">
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" minlength="2" maxlength="20"
+                   required>
+        </li>
+        <li id="formPostal" class="form">
+            <label for="codepostal">Code Postal</label>
+            <input type="text" id="codepostal" name="codepostal" placeholder="Votre code postal" minlength="5"
+                   maxlength="5" required>
+        </li>
+        <li id="formEmail" class="form">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" maxlength="50" required>
+        </li>
+        <li id="formTel" class="form">
+            <label for="tel">Numéro de téléphone</label>
+            <input type="tel" id="tel" name="tel" placeholder="Votre numéro de téléphone" minlength="10" maxlength="10" required>
+        </li>
+        <li id="formCheckbox" class="form">
+            <input type="checkbox" id="checkbox" name="checkbox">
+        </li>
+    </ul>
+</form>
 
 <footer>
     <div id="copyright">&copy; 2019 BEW 165 | Développé par Andy C. & Mathis G.</div>
 </footer>
 <script>
-    function activerDesactiver(){
+    function activerDesactiver() {
         document.querySelector("#menu").classList.toggle("actif");
     }
+
     document.querySelector("#afficheMenu").addEventListener("click", activerDesactiver);
 
-    function changementtaillefenetre(){
-        if (document.body.clientWidth>=768){
+    function changementtaillefenetre() {
+        if (document.body.clientWidth >= 768) {
             var navbarheight = document.getElementById("navig").offsetHeight;
             var sectionmod = document.getElementById("h1_1");
-            sectionmod.style.paddingTop=navbarheight+"px";
+            sectionmod.style.paddingTop = navbarheight + "px";
         }
     }
+
     window.onresize = changementtaillefenetre;
-    window.onload = function(){changementtaillefenetre()};
+    window.onload = function () {
+        changementtaillefenetre()
+    };
 </script>
 </body>
 </html>
