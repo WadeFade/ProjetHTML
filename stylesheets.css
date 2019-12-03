@@ -11,7 +11,7 @@ body {
 .BodyProjets {
     background-color: black;
 }
-
+/* --- menu --- */
 #afficheMenu {
     position: absolute;
     top: 3%;
@@ -71,7 +71,17 @@ h1 {
     font-size: 3em;
     text-align: center;
 }
+/*h1_1 , premier bloc sous nav bar pour pages autre que accueil*/
+#h1_1 {
+    padding-top: 52px;
+    z-index: 1;
+    text-align: center;
+    font-size: 1em;
+    display: inline-block;
+    width: 100%;
+}
 
+/* --- page accueil ---*/
 /* ---- particles.js container ---- */
 #particles-js {
     height: 100vh;
@@ -81,7 +91,32 @@ h1 {
     background-size: 20%;
     background-position: 50% 50%;
 }
+/*Background à changer quand on aura de vraies images*/
+/*Partie présentation générale*/
+#presentationG {
+    border: 2px solid black;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
+/*Titre de la présentation générale*/
+#presentationG header {
+    font-family: Kalam, cursive;
+    font-size: 2em;
+    padding: 3% 0 2% 0;
+}
+
+/*Paragraphe de la présentation générale*/
+#presentationG p {
+    font-family: Cookie, cursive;
+    font-size: 1.7em;
+    padding: 0 3%;
+    margin-top: 0;
+}
+
+/* --- page equipe ---*/
 #Equipe {
     display: flex;
     background-image: url("images/espaceHD.jpg");
@@ -127,41 +162,7 @@ h1 {
     color: navajowhite;
 }
 
-/*Background à changer quand on aura de vraies images*/
-/*Partie présentation générale*/
-#presentationG {
-    border: 2px solid black;
-    margin: 3%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-/*Titre de la présentation générale*/
-#presentationG header {
-    font-family: Kalam, cursive;
-    font-size: 2em;
-    padding: 3% 0 2% 0;
-}
-
-/*Paragraphe de la présentation générale*/
-#presentationG p {
-    font-family: Cookie, cursive;
-    font-size: 1.7em;
-    padding: 0 3%;
-    margin-top: 0;
-}
-
-/*h1_1 , premier bloc sous nav bar*/
-#h1_1 {
-    padding-top: 52px;
-    z-index: 1;
-    text-align: center;
-    font-size: 1em;
-    display: inline-block;
-    width: 100%;
-}
-
+/* --- page projets --- */
 #titreProjets {
     padding-top: 52px;
     z-index: 1;
@@ -185,8 +186,93 @@ h1 {
     color: white;
     font-size: 1.5em;
 }
+/* Pour le carrousel A MODIF CAR CA REND FOUUUU ne pas oublier de garder les proportions par rapport au nombre d'images utilisées*/
+/*Tu m'étonne quel enferrrr ce machin*/
+#slider figure {
+    position: relative;
+    width: 300%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+    animation: 22s slidy infinite;
+}
 
-/*CSS pour le formulaire*/
+#slider figure img {
+    width: 33.33%;
+    height: auto;
+    float: left;
+}
+
+#slider {
+    width: 50%;
+    text-align: center;
+    overflow: hidden;
+    border: solid black 2px;
+    border-radius: 7px;
+}
+
+#middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Calculé pour 3 Images*/
+@keyframes slidy {
+    0% {
+        left: 0;
+    }
+    28.33% {
+        left: 0;
+    }
+    33.33% {
+        left: -100%;
+    }
+    61.66% {
+        left: -100%;
+    }
+    66.66% {
+        left: -200%;
+    }
+    94.99% {
+        left: -200%;
+    }
+    100% {
+        left: 0;
+    }
+}
+/* --- page services */
+
+.serviceProposer:nth-child(2n+1){
+    background-color: rgba(80, 80, 80, 0.4);
+}
+.serviceProposer header{
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1% 5px;
+    padding: 1%;
+    text-align: center;
+}
+.serviceProposer article{
+    padding: 2%;
+    display: block;
+}
+.serviceProposer article div {
+    text-align: center;
+}
+.serviceProposer article div i{
+    font-size: 5em;
+    color: #232741;
+}
+.serviceProposer article div p{
+    padding: 1%;
+}
+.serviceProposer article div:nth-child(2){
+    margin: 1%;
+}
+/* --- CSS pour le formulaire - page contact --- */
 .formulaire {
     display: flex;
     padding: 5% 25%;
@@ -229,68 +315,11 @@ h1 {
     font-size: 0.9em;
 }
 
-
-/*Copyright / developped by Andy+Mathis, dernière ligne des pages*/
+/* --- Copyright / developped by Andy+Mathis, dernière ligne des pages - Footer page ---*/
 #copyright {
     text-align: center;
     background-color: rgba(80, 80, 80, 0.4);
     backdrop-filter: blur(10px);
-}
-
-/*Pour le carrousel A MODIF CAR CA REND FOUUUU ne pas oublier de garder les proportions par rapport au nombre d'images utilisées*/
-#slider figure {
-    position: relative;
-    width: 300%;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-    text-align: left;
-    animation: 22s slidy infinite;
-}
-
-#slider figure img {
-    width: 33.33%;
-    height: auto;
-    float: left;
-}
-
-#slider {
-    width: 50%;
-    text-align: center;
-    overflow: hidden;
-    border: solid black 2px;
-    border-radius: 7px;
-}
-
-#middle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*Calculé pour 3 Images*/
-@keyframes slidy {
-    0% {
-        left: 0;
-    }
-    28.33% {
-        left: 0;
-    }
-    33.33% {
-        left: -100%;
-    }
-    61.66% {
-        left: -100%;
-    }
-    66.66% {
-        left: -200%;
-    }
-    94.99% {
-        left: -200%;
-    }
-    100% {
-        left: 0;
-    }
 }
 
 /*Media query format 768px en largeur*/
@@ -367,6 +396,14 @@ h1 {
         margin: 0;
     }
 
+    .serviceProposer article{
+        display: flex;
+        align-items: center;
+    }
+    .serviceProposer article div{
+        margin: 5%;
+    }
+
     .formulaire {
         padding: 2% 15%;
         margin: 2% 20%;
@@ -381,6 +418,8 @@ h1 {
     .form > button {
         width: 10vw;
     }
+
 }
 
 /*Media query pour le 1024 pixel on verra si on en à besoin mais je ne penses pas*/
+/* inchalah comme on dit :') */
