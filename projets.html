@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cookie|Kalam|Permanent+Marker&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/da7397688c.js" crossorigin="anonymous"></script>
 </head>
-<body id="BodyProjets">
+<body class="BodyProjets">
 <!--Bouton menu pour la version smartphone-->
 <button id="afficheMenu"><i class="fas fa-bars"></i></button>
 <!--Barre de navigation-->
@@ -56,11 +56,12 @@
     <div id="copyright">&copy; 2019 BEW 165 | Développé par Andy C. & Mathis G.</div>
 </footer>
 <script>
+    // affichage menu
     function activerDesactiver(){
         document.querySelector("#menu").classList.toggle("actif");
     }
     document.querySelector("#afficheMenu").addEventListener("click", activerDesactiver);
-
+    // bloc sous nav bar
     function changementtaillefenetre(){
         if (document.body.clientWidth>=768){
             var navbarheight = document.getElementById("navig").offsetHeight;

@@ -40,11 +40,12 @@
     <div id="copyright">&copy; 2019 BEW 165 | Développé par Andy C. & Mathis G.</div>
 </footer>
 <script>
+    // affichage menu
     function activerDesactiver(){
         document.querySelector("#menu").classList.toggle("actif");
     }
     document.querySelector("#afficheMenu").addEventListener("click", activerDesactiver);
-
+    // bloc sous nav bar
     function changementtaillefenetre(){
         if (document.body.clientWidth>=768){
             var navbarheight = document.getElementById("navig").offsetHeight;
