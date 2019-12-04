@@ -205,7 +205,7 @@ h1 {
 }
 
 #slider {
-    width: 50%;
+    width: 60%;
     text-align: center;
     overflow: hidden;
     border: solid black 2px;
@@ -460,6 +460,9 @@ h1 {
 
     .form > button {
         width: 10vw;
+    }
+    #slider {
+        width: 30%;
     }
 
 }
