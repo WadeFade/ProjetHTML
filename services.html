@@ -24,71 +24,86 @@
             <li><a href="projets.html">Projets</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
-<!--            <li class="CacherTel"><a id="modeSombre" href=""><i class="fas fa-moon"></i></a></li>-->
+            <!--            <li class="CacherTel"><a id="modeSombre" href=""><i class="fas fa-moon"></i></a></li>-->
         </ul>
     </nav>
 </header>
 
 <h1 id="h1_1">Tous nos services ici</h1>
-
-<section class="serviceProposer">
-    <header>Service 1 - Developpement Web</header>
-    <article>
-        <div><i class="fas fa-laptop-code"></i></div>
-        <div>
-            <p>6Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus facere fugiat labore odio praesentium quaerat quam quasi quia
-                repudiandae vitae. Architecto atque, culpa delectus eaque esse fugit illum impedit ipsam ipsum iste, maxime necessitatibus numquam
-                possimus quibusdam recusandae reiciendis sunt tempore tenetur ullam velit. Accusamus aliquam atque culpa earum eius, error eum illo,
-                maiores minima, necessitatibus quae quisquam quo saepe.
-            </p>
-        </div>
-    </article>
-</section>
-<section class="serviceProposer">
-    <header>Service 2 - Reparation / Maintenance / Installation / Conseils</header>
-    <article>
-        <div><i class="fas fa-tools"></i></div>
-        <div>
-            <p>6Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus facere fugiat labore odio praesentium quaerat quam quasi quia
-                repudiandae vitae. Architecto atque, culpa delectus eaque esse fugit illum impedit ipsam ipsum iste, maxime necessitatibus numquam
-                possimus quibusdam recusandae reiciendis sunt tempore tenetur ullam velit. Accusamus aliquam atque culpa earum eius, error eum illo,
-                maiores minima, necessitatibus quae quisquam quo saepe.
-            </p>
-        </div>
-    </article>
-</section>
-<section class="serviceProposer">
-    <header>Service 3 - Cours / Aides</header>
-    <article>
-        <div><i class="fab fa-leanpub"></i></div>
-        <div>
-            <p>6Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus facere fugiat labore odio praesentium quaerat quam quasi quia
-                repudiandae vitae. Architecto atque, culpa delectus eaque esse fugit illum impedit ipsam ipsum iste, maxime necessitatibus numquam
-                possimus quibusdam recusandae reiciendis sunt tempore tenetur ullam velit. Accusamus aliquam atque culpa earum eius, error eum illo,
-                maiores minima, necessitatibus quae quisquam quo saepe.
-            </p>
-        </div>
-    </article>
-</section>
+<div id="containSection">
+    <section class="serviceProposer">
+        <header>Service 1 - Developpement Web</header>
+        <article>
+            <div><i class="fas fa-laptop-code"></i></div>
+            <div>
+                <p>6Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus facere fugiat labore odio
+                    praesentium quaerat quam quasi quia
+                    repudiandae vitae. Architecto atque, culpa delectus eaque esse fugit illum impedit ipsam ipsum iste,
+                    maxime necessitatibus numquam
+                    possimus quibusdam recusandae reiciendis sunt tempore tenetur ullam velit. Accusamus aliquam atque
+                    culpa earum eius, error eum illo,
+                    maiores minima, necessitatibus quae quisquam quo saepe.
+                </p>
+            </div>
+        </article>
+    </section>
+    <section class="serviceProposer">
+        <header>Service 2 - Reparation / Maintenance / Installation / Conseils</header>
+        <article>
+            <div><i class="fas fa-tools"></i></div>
+            <div>
+                <p>6Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus facere fugiat labore odio
+                    praesentium quaerat quam quasi quia
+                    repudiandae vitae. Architecto atque, culpa delectus eaque esse fugit illum impedit ipsam ipsum iste,
+                    maxime necessitatibus numquam
+                    possimus quibusdam recusandae reiciendis sunt tempore tenetur ullam velit. Accusamus aliquam atque
+                    culpa earum eius, error eum illo,
+                    maiores minima, necessitatibus quae quisquam quo saepe.
+                </p>
+            </div>
+        </article>
+    </section>
+    <section class="serviceProposer">
+        <header>Service 3 - Cours / Aides</header>
+        <article>
+            <div><i class="fab fa-leanpub"></i></div>
+            <div>
+                <p>6Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus facere fugiat labore odio
+                    praesentium quaerat quam quasi quia
+                    repudiandae vitae. Architecto atque, culpa delectus eaque esse fugit illum impedit ipsam ipsum iste,
+                    maxime necessitatibus numquam
+                    possimus quibusdam recusandae reiciendis sunt tempore tenetur ullam velit. Accusamus aliquam atque
+                    culpa earum eius, error eum illo,
+                    maiores minima, necessitatibus quae quisquam quo saepe.
+                </p>
+            </div>
+        </article>
+    </section>
+</div>
 <footer>
-    <div id="copyright">&copy; 2019 BEW 165 | Développé par Andy C. & Mathis G.</div>
+    <div id="copyrightServices">&copy; 2019 BEW 165 | Développé par Andy C. & Mathis G.</div>
 </footer>
 <script>
     // affichage menu
-    function activerDesactiver(){
+    function activerDesactiver() {
         document.querySelector("#menu").classList.toggle("actif");
     }
+
     document.querySelector("#afficheMenu").addEventListener("click", activerDesactiver);
+
     // bloc sous nav bar
-    function changementtaillefenetre(){
-        if (document.body.clientWidth>=768){
+    function changementtaillefenetre() {
+        if (document.body.clientWidth >= 768) {
             var navbarheight = document.getElementById("navig").offsetHeight;
             var sectionmod = document.getElementById("h1_1");
-            sectionmod.style.paddingTop=navbarheight+"px";
+            sectionmod.style.paddingTop = navbarheight + "px";
         }
     }
+
     window.onresize = changementtaillefenetre;
-    window.onload = function(){changementtaillefenetre()};
+    window.onload = function () {
+        changementtaillefenetre()
+    };
 </script>
 </body>
 </html>

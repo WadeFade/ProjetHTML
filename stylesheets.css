@@ -76,7 +76,7 @@ h1 {
     padding-top: 52px;
     z-index: 1;
     text-align: center;
-    font-size: 1em;
+    font-size: 3em;
     display: inline-block;
     width: 100%;
 }
@@ -249,10 +249,9 @@ h1 {
     background-color: rgba(80, 80, 80, 0.4);
 }
 .serviceProposer header{
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
-    margin: 1% 5px;
-    padding: 1%;
+    padding: 5% 1%;
     text-align: center;
 }
 .serviceProposer article{
@@ -265,9 +264,10 @@ h1 {
 .serviceProposer article div i{
     font-size: 5em;
     color: #232741;
+    padding: 5% 0 0 0;
 }
 .serviceProposer article div p{
-    padding: 1%;
+    padding: 5% 0;
 }
 .serviceProposer article div:nth-child(2){
     margin: 1%;
@@ -319,6 +319,11 @@ h1 {
 #copyright {
     text-align: center;
     background-color: rgba(80, 80, 80, 0.4);
+    backdrop-filter: blur(10px);
+}
+#copyrightServices{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(10px);
 }
 
@@ -438,10 +443,23 @@ h1 {
         padding: 0;
         margin: 0;
     }
+    #containSection{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+    }
 
+    .serviceProposer{
+        display: flex;
+        flex-flow: column nowrap;
+        width: 33.33%;
+        /*height: 90vh;*/
+    }
     .serviceProposer article{
         display: flex;
         align-items: center;
+        flex-flow: column nowrap;
+
     }
     .serviceProposer article div{
         margin: 5%;
